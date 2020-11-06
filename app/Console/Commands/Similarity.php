@@ -106,7 +106,7 @@ class Similarity extends Command
         }
         $end = time();
         \App\Similarity::insert($data_create_sim);
-        echo_now('Thanh cong: '.$end-$start);
+        echo_now('Thanh cong: '. ($end - $start));
         return 1;
     }
 }
